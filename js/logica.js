@@ -43,7 +43,7 @@ const crear = () => {
         dataType: 'json',
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
+            //"Access-Control-Allow-Origin": "*"
         },
         data: JSON.stringify(payload),
         statusCode: {

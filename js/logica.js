@@ -1,4 +1,5 @@
-const urlbase = 'http://129.151.119.152:8080/api/user';
+// const urlbase = 'http://129.151.119.152:8080/api/user';
+const urlbase = 'http://localhost:8080/api/user';
 
 const crear = () => {
     //document.getElementById('txtNombre').value;
@@ -41,7 +42,8 @@ const crear = () => {
         type: "POST",
         dataType: 'json',
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
         },
         data: JSON.stringify(payload),
         statusCode: {
